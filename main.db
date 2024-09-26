@@ -1,0 +1,19 @@
+-- Create the student table if it does not exist
+create table student(
+roll_num text primary KEY,
+name text not null, 
+address text,
+phone text,
+age integer
+);
+-- Insert sample data into the students table
+insert into student(roll_num, name, address, phone, age) VALUES
+  ('1', 'Ram', 'Delhi', '*****', 18),
+  ('2', 'Ramesh', 'Gurgaon', '*****' 18),
+  ('3', 'Sujit', 'Rohtak', '*****', 20),
+  ('4', 'Suresh', 'Delhi', '*****', 18),
+  ('5', 'Aman', 'Rohtak', '*****', 20),
+  ('6', 'Harsh', 'Gurgaon', '*****', 18);
+
+-- Select all records from the student table
+SELECT * FROM student;
